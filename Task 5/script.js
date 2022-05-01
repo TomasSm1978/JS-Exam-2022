@@ -25,9 +25,11 @@ const users = [
 function filterDogOwers(x) {
   const JS5_1_new = users.filter((x) => x.hasDog == true);
   JS5_1_new_map = JS5_1_new.map((x) => x.name)
-  for(let i=0; i<=JS5_1_new_map.length-1; i++)
-  console.log(JS5_1_new_map[i])
+  for (let i = 0; i <= JS5_1_new_map.length - 1; i++) {
+    console.log(JS5_1_new_map[i]);
+  }
   console.log(JS5_1_new_map);
+  return JS5_1_new_map;
 }
 filterDogOwers(users)
 
@@ -38,5 +40,6 @@ function filterAdults(x) {
   JS5_2_new_adult = JS5_2_new.map((x) => x.name)
   console.log(JS5_2_new_adult);
   console.log(JS5_2_new);
+  return JS5_2_new_adult;
 }
 filterAdults(users);
