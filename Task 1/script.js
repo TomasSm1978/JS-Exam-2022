@@ -13,5 +13,5 @@ document.querySelector("form").addEventListener("submit", JS1_getData);
 function JS1_getData(event) {
     event.preventDefault();
     let JS1_1 = document.querySelector("#search").value;
-    document.querySelector("#output").textContent = `${JS1_1*2}lb, ${JS1_1/0.001}g, ${JS1_1*35.274}oz`;
+    document.querySelector("#output").textContent = `${JS1_1*2.2046}lb, ${JS1_1/0.001}g, ${JS1_1*35.274}oz`;
 }
