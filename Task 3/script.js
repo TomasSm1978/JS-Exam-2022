@@ -21,16 +21,16 @@ fetch(ENDPOINT)
             return JS3_getApiRes.json();
         }
         else {
-            document.getElementById("message").textContent = "Kažkas negerai"
+            document.getElementById("message").textContent = "Kažkas negerai";
         }
     })
     .then(JS3_getApiData => {
         let output = "";
         JS3_getApiData.forEach((item, index) => {
             const JS3_1 = document.createElement("div");
-            JS3_1.innerText = (`${item.login}, ${item.avatar_url}`)
+            JS3_1.innerText = (`${item.login}, ${item.avatar_url}`);
             document.getElementById("output").append(JS3_1);
         })
     })
-    .catch(err => document.getElementById("message").textContent = err)
+    .catch(err => document.getElementById("message").textContent = err);
 }
