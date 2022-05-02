@@ -38,7 +38,7 @@ getUserAverageAge(users)
 // atveju grąžins visų "users" vardus naujame masyve pvz., ['John Smith', 'Ann Smith'..].
 
 function getUsersName(x) {
-  const JS6_2_new = users.map((x) => x.name)
+  const JS6_2_new = users.map((x) => x.name);
   console.log(JS6_2_new);
   return JS6_2_new;
 }
