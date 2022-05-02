@@ -16,7 +16,7 @@ fetch(ENDPOINT)
             return JS4_getApiRes.json();
         }
         else {
-            document.getElementById("output").textContent = "Kažkas negerai"
+            document.getElementById("output").textContent = "Kažkas negerai";
         }
     })
     .then(JS4_getApiData => {
@@ -25,10 +25,10 @@ fetch(ENDPOINT)
             const JS4_1 = document.createElement("div");
             const JS4_2 = document.createElement("div");
             const JS4_3 = document.createElement("div");
-            JS4_1.innerText = (`${item.brand}`)
-            JS4_2.innerText = (`${item.models}`)
-            JS4_3.append(JS4_1, JS4_2)
+            JS4_1.innerText = (`${item.brand}`);
+            JS4_2.innerText = (`${item.models}`);
+            JS4_3.append(JS4_1, JS4_2);
             document.getElementById("output").append(JS4_3);
         })
     })
-    .catch(err => document.getElementById("message").textContent = err)
+    .catch(err => document.getElementById("message").textContent = err);
