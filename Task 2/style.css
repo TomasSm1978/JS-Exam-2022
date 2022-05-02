@@ -24,7 +24,7 @@
   flex-wrap: wrap;
 }
 #btn__element {
-  width: 75%;
+  width: 70%;
   padding: 15px 25px;
   background-color: #222;
   border: #222;
@@ -40,8 +40,8 @@
 }
 
 #btn__state {
-  width: 25%;
-  padding: 15px 25px;
+  width: 30%;
+  padding: 15px 15px;
   background-color: rgb(59, 59, 59);
   border: #222;
   color: #fff;
